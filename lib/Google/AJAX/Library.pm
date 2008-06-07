@@ -5,15 +5,15 @@ use strict;
 
 =head1 NAME
 
-Google::AJAX::Library
+Google::AJAX::Library - Access the Google AJAX Libaries API in Perl
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -94,7 +94,7 @@ Returns a jQuery library object of the given version
 
 If no version is given or the given version is 0, then the latest version (1) will be used
 
-You can pass through C<uncompressed => 1> to get the non-compacted .js
+You can pass through "uncompressed = 1" to get the non-compacted .js
 
 For example:
 
@@ -146,7 +146,7 @@ Returns a MooTools library object of the given version
 
 If no version is given or the given version is 0, then the latest version (1) will be used
 
-You can pass through C<uncompressed => 1> to get the non-compacted .js
+You can pass through "uncompressed = 1" to get the non-compacted .js
 
 =cut
 
@@ -164,7 +164,7 @@ Returns a Dojo library object of the given version
 
 If no version is given or the given version is 0, then the latest version (1) will be used
 
-You can pass through C<uncompressed => 1> to get the non-compacted .js
+You can pass through "uncompressed = 1" to get the non-compacted .js
 
 =cut
 
@@ -331,7 +331,7 @@ Attempts to GET $library
 
 If <to> is a GLOB reference then the content will be printed to <to>
 
-If <to> is a filename (or Path::Class::File object) then the content will be printed to the filename specified<to>
+If <to> is a filename (or Path::Class::File object) then the content will be printed to the filename specified
 
 This method will croak if $library couldn't be gotten from Google (e.g. 404)
 
