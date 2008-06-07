@@ -362,6 +362,8 @@ sub _christen {
     return $class->new(@new);
 }
 
+__PACKAGE__->meta->make_immutable;
+
 =head1 AUTHOR
 
 Robert Krimen, C<< <rkrimen at cpan.org> >>
