@@ -49,7 +49,7 @@ You can also fetch or write-out the library content:
 
 =head1 DESCRIPTION
 
-Google::AJAX::Library is a module for accessing Google's AJAX Libaries API via Perl
+Google::AJAX::Library is a module for accessing the Google AJAX Libaries API via Perl
 
 You can find out more about the API here: http://code.google.com/apis/ajaxlibs/
 
@@ -124,7 +124,7 @@ sub prototype {
     return _christen prototype => @_;
 }
 
-=head2 Google::AJAX::Library->prototype([ <version> ])
+=head2 Google::AJAX::Library->scriptaculous([ <version> ])
 
 Returns a script.aculo.us library object of the given version
 
@@ -302,7 +302,7 @@ Returns the L<HTTP::Response> decoded content If <to> is not given
 
 If <to> is a SCALAR reference then the content will be put into <to>
 
-This method is synonymous/interchangeable with C<write)
+This method is synonymous/interchangeable with C<write>
 
 =cut
 
@@ -335,7 +335,7 @@ If <to> is a filename (or Path::Class::File object) then the content will be pri
 
 This method will croak if $library couldn't be gotten from Google (e.g. 404)
 
-This method is synonymous/interchangeable with C<fetch)
+This method is synonymous/interchangeable with C<fetch>
 
 =cut
 
@@ -365,6 +365,14 @@ sub _christen {
 =head1 AUTHOR
 
 Robert Krimen, C<< <rkrimen at cpan.org> >>
+
+=head1 SEE ALSO
+
+L<http://code.google.com/apis/ajaxlibs/>
+
+L<JS::jQuery::Loader>
+
+L<JS::YUI::Loader>
 
 =head1 BUGS
 
@@ -410,7 +418,7 @@ L<http://search.cpan.org/dist/Google-AJAX-Library>
 
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2008 Robert Krimen, all rights reserved.
+Copyright 2008 Robert Krimen
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
