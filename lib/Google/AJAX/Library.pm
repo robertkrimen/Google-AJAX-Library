@@ -61,12 +61,15 @@ use constant LATEST_VERSION => {qw/
     dojo 1
 /};
 
+$Google::AJAX::Library::VERSION ||= 0;
+
 has uri => qw/is ro/;
 has version => qw/is ro/;
 has file => qw/is ro/;
 has name => qw/is ro/;
 has ua => qw/is ro required 1 lazy 1 isa LWP::UserAgent/, default => sub {
     my $ua = LWP::UserAgent->new;
+    
     $ua->agent("Google::AJAX::Library/$Google::AJAX::Library::VERSION (" . $ua->agent . ")");
     return $ua;
 };
