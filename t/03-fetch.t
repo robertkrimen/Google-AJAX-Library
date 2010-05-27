@@ -5,7 +5,7 @@ use Test::More;
 use Google::AJAX::Library;
 use File::Temp qw/tempfile/;
 
-use constant TEST_RELEASE => $ENV{TEST_RELEASE} ? 1 : 0;
+use constant AUTHOR_TESTING => $ENV{AUTHOR_TESTING} ? 1 : 0;
 use constant jQuery_HEAD => <<'_END_';
 /*
  * jQuery 1.2.3 - New Wave Javascript
@@ -19,7 +19,7 @@ use constant jQuery_HEAD => <<'_END_';
  */
 _END_
 
-plan skip_all => "Not going out to http://ajax.googleapis.com to test fetching/writing" unless TEST_RELEASE;
+plan skip_all => "Not going out to http://ajax.googleapis.com to test fetching/writing" unless AUTHOR_TESTING;
 plan qw/no_plan/;
 
 my $library = shift;
