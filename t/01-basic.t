@@ -10,7 +10,7 @@ my $library;
 ok($library = Google::AJAX::Library->new(qw/name jquery/));
 is($library->version, '1');
 is($library->uri, "http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js");
-is($library->html, '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>');
+is(''.$library->html, '<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" type="text/javascript"></script>');
 
 ok($library = Google::AJAX::Library->mootools);
 is($library->version, '1');
