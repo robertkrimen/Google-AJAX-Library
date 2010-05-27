@@ -1,0 +1,24 @@
+#!/usr/bin/env perl
+use Dzpl
+    name => 'Google-AJAX-Library',
+    version => '0.021',
+    author => 'Robert Krimen <robertkrimen@gmail.com>',
+    license => 'Perl5',
+    copyright => 'Robert Krimen',
+
+    require => q/
+        Carp::Clan::Share
+        HTML::Declare
+        LWP::UserAgent
+        Moose
+        Path::Class
+        URI
+
+        [Test]
+        File::Temp
+        Test::Most
+    /,
+;
+
+{ plugin '@ROKR' }
+

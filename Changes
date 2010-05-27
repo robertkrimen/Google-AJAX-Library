@@ -1,6 +1,9 @@
-0.02 Friday June 06 18:13:30 PDT 2008:
- - Forget the description in the title
- - Minor dox tweaking
+0.021 Wednesday May 26 18:32:49 PDT 2010:
+    - Converted to dzpl
 
-0.01 Friday June 06 16:45:07 PDT 2008:
- - Initial release
+0.020 Friday June 06 18:13:30 PDT 2008:
+    - Forget the description in the title
+    - Minor dox tweaking
+
+0.010 Friday June 06 16:45:07 PDT 2008:
+    - Initial release

@@ -2,7 +2,7 @@ NAME
     Google::AJAX::Library - Access the Google AJAX Libaries API in Perl
 
 VERSION
-    Version 0.02
+    version 0.021
 
 SYNOPSIS
         use Google::AJAX::Library;
@@ -138,9 +138,6 @@ METHODS
 
     This method is synonymous/interchangeable with "fetch"
 
-AUTHOR
-    Robert Krimen, "<rkrimen at cpan.org>"
-
 SEE ALSO
     <http://code.google.com/apis/ajaxlibs/>
 
@@ -148,40 +145,12 @@ SEE ALSO
 
     JS::YUI::Loader
 
-BUGS
-    Please report any bugs or feature requests to "bug-google-ajax-library
-    at rt.cpan.org", or through the web interface at
-    <http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Google-AJAX-Library>. I
-    will be notified, and then you'll automatically be notified of progress
-    on your bug as I make changes.
+AUTHOR
+      Robert Krimen <robertkrimen@gmail.com>
 
-SUPPORT
-    You can find documentation for this module with the perldoc command.
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2010 by Robert Krimen.
 
-        perldoc Google::AJAX::Library
-
-    You can also look for information at:
-
-    *   RT: CPAN's request tracker
-
-        <http://rt.cpan.org/NoAuth/Bugs.html?Dist=Google-AJAX-Library>
-
-    *   AnnoCPAN: Annotated CPAN documentation
-
-        <http://annocpan.org/dist/Google-AJAX-Library>
-
-    *   CPAN Ratings
-
-        <http://cpanratings.perl.org/d/Google-AJAX-Library>
-
-    *   Search CPAN
-
-        <http://search.cpan.org/dist/Google-AJAX-Library>
-
-ACKNOWLEDGEMENTS
-COPYRIGHT & LICENSE
-    Copyright 2008 Robert Krimen
-
-    This program is free software; you can redistribute it and/or modify it
-    under the same terms as Perl itself.
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
 
