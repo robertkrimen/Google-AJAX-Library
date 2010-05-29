@@ -69,7 +69,6 @@ has file => qw/is ro/;
 has name => qw/is ro/;
 has ua => qw/is ro required 1 lazy 1 isa LWP::UserAgent/, default => sub {
     my $ua = LWP::UserAgent->new;
-    
     $ua->agent("Google::AJAX::Library/$Google::AJAX::Library::VERSION (" . $ua->agent . ")");
     return $ua;
 };
@@ -271,7 +270,7 @@ This method uses a HEAD request to do the checking
 
 sub exists {
     my $self = shift;
-    return $self->ua->head($self->uri)->is_success ? 1 : 0;
+    return $self->ua->head( $self->uri )->is_success ? 1 : 0;
 }
 
 =head2 $library->request

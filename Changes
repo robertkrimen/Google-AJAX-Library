@@ -1,3 +1,6 @@
+0.022 Friday May 28 17:09:48 PDT 2010:
+    - Keep non-author tests from accessing Internet
+
 0.021 Wednesday May 26 18:32:49 PDT 2010:
     - Fixed minor issue with testing with Test-Simple-0.95_02 (rt57876) (Slaven)
     - Converted to dzpl

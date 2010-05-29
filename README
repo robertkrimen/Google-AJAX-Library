@@ -2,7 +2,7 @@ NAME
     Google::AJAX::Library - Access the Google AJAX Libaries API in Perl
 
 VERSION
-    version 0.021
+    version 0.022
 
 SYNOPSIS
         use Google::AJAX::Library;
